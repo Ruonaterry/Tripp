@@ -1,0 +1,84 @@
+:root {
+	/* brand */
+	--color-primary-600: #0A3D62;
+	--color-primary-700: #072B44;
+	--color-accent-500: #20C997;
+	--color-accent-600: #10A07E;
+
+	/* neutrals */
+	--color-bg: #FFFFFF;
+	--color-surface: #F6F8FA;
+	--color-surface-2: #E6EBEF;
+	--color-text: #0A0F14;
+	--color-muted: #5B6B79;
+
+	/* semantics */
+	--color-success: #17A34A;
+	--color-warning: #C27803;
+	--color-error: #D92D20;
+	--color-info: #2563EB;
+
+	/* layout */
+	--radius-sm: 8px;
+	--radius-md: 12px;
+	--radius-lg: 16px;
+	--radius-xl: 24px;
+
+	--shadow-sm: 0 1px 2px 0 rgba(0,0,0,0.05);
+	--shadow-md: 0 8px 24px rgba(0,0,0,0.08);
+	--shadow-lg: 0 16px 40px rgba(0,0,0,0.14);
+
+	/* spacing scale */
+	--space-1: 4px;
+	--space-2: 8px;
+	--space-3: 12px;
+	--space-4: 16px;
+	--space-6: 24px;
+	--space-8: 32px;
+	--space-10: 40px;
+	--space-12: 48px;
+
+	/* motion */
+	--ease-standard: cubic-bezier(0.2, 0, 0, 1);
+	--dur-quick: 150ms;
+	--dur-standard: 250ms;
+	--dur-slow: 400ms;
+
+	/* premium */
+	--glass-bg: rgba(255,255,255,0.7);
+	--glass-border: rgba(255,255,255,0.6);
+	--ring: rgba(32,201,151,0.3);
+	--card-gradient: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(246,248,250,0.9));
+}
+
+[data-theme="dark"] {
+	--color-bg: #0B1117;
+	--color-surface: #0F1623;
+	--color-surface-2: #1F2937;
+	--color-text: #E5E7EB;
+	--color-muted: #9CA3AF;
+
+	--color-primary-600: #58A6FF;
+	--color-primary-700: #3B82F6;
+	--color-accent-500: #34D3AE;
+	--color-accent-600: #24B899;
+
+	--color-success: #22C55E;
+	--color-warning: #F59E0B;
+	--color-error: #F05252;
+	--color-info: #60A5FA;
+
+	/* premium */
+	--glass-bg: rgba(12,18,31,0.5);
+	--glass-border: rgba(255,255,255,0.08);
+	--ring: rgba(88,166,255,0.3);
+	--card-gradient: linear-gradient(180deg, rgba(17,24,39,0.9), rgba(11,17,23,0.9));
+}
+
+/* utilities bound to variables */
+.token-surface { background: var(--color-surface); }
+.token-surface-2 { background: var(--color-surface-2); }
+.token-bg { background: var(--color-bg); }
+.token-text { color: var(--color-text); }
+.token-muted { color: var(--color-muted); }
+.glass { background: var(--glass-bg); backdrop-filter: saturate(140%) blur(12px); border: 1px solid var(--glass-border); }

@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@import "./styles/tokens.css";
+
+@theme {
+	--font-sans: Inter, ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
+	--font-display: Spectral, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+	--color-primary-600: var(--color-primary-600);
+	--color-primary-700: var(--color-primary-700);
+	--color-accent-500: var(--color-accent-500);
+	--color-accent-600: var(--color-accent-600);
+	--color-bg: var(--color-bg);
+	--color-surface: var(--color-surface);
+	--color-surface-2: var(--color-surface-2);
+	--color-text: var(--color-text);
+	--color-muted: var(--color-muted);
+}
+
+html, body, #root { height: 100%; }
+body { background: radial-gradient(1200px 500px at 10% -20%, rgba(10,61,98,0.04), transparent), var(--color-bg); color: var(--color-text); font-family: var(--font-sans); }
+.h-display { font-family: var(--font-display); letter-spacing: -0.01em; }
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
