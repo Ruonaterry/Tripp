@@ -17,10 +17,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Tripp",
-  description: "Real-estate platform with escrow, AI insights, and investments",
-};
+// export const metadata: Metadata = {
+//   title: "Tripp",
+//   description: "Real-estate platform with escrow, AI insights, and investments",
+// };
 
 export default function RootLayout({
   children,
